@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suitactivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/komputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Pilihan Komputer!"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/imagekomputer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/komputer"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/que" />
+
+    <TextView
+        android:id="@+id/tengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagekomputer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Pilihan Player!"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/imageplayer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tengah"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/que" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageplayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Score"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/btngunting"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/score"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ks" />
+
+    <ImageButton
+        android:id="@+id/btnbatu"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/score"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/btngunting"
+        android:background="@drawable/bt"
+        android:paddingLeft="100dp" />
+
+    <ImageButton
+        android:id="@+id/btnkertas"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/score"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/btnbatu"
+        android:background="@drawable/pp" />
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#ED7716"
+        android:text="Restart Game"
+        android:textColor="@color/white"
+        android:layout_below="@id/btnbatu"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

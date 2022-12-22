@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnakeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottombar"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@android:color/holo_blue_dark"
+        >
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/score"
+              android:text="0"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottombar"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+
+            android:src="@drawable/ic_baseline_arrow_drop_up_24"
+            android:id="@+id/top" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+
+                android:src="@drawable/ic_baseline_arrow_left_24"
+                android:id="@+id/left" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:background="@android:color/white"
+
+                android:src="@drawable/ic_baseline_arrow_right_24"
+                android:id="@+id/right" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:id="@+id/down"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "148502148294",
+    "project_id": "uas-winston-c11210018",
+    "storage_bucket": "uas-winston-c11210018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148502148294:android:ba383c9ef241963ec053c7",
+        "android_client_info": {
+          "package_name": "com.example.uas_winston_c11210018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148502148294-h9qn0j1u57cs2oh3jt3ufifcr0bc0sbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uas_winston_c11210018",
+            "certificate_hash": "045c16e965a3649e5119a2d21689daa4983df92c"
+          }
+        },
+        {
+          "client_id": "148502148294-u5ap6g6pg6prrms9g9t8bdqssqlpslpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIiThXsTFbPauXNqRyFKqcIdDe9v5iBZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148502148294-u5ap6g6pg6prrms9g9t8bdqssqlpslpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
